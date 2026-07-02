@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 — Photo Storage</title>
+  <style>
+    :root {
+      --purple: #7F77DD;
+      --purple-light: #EEEDFE;
+      --mint: #0F6E56;
+      --mint-light: #E1F5EE;
+      --text: #1A1A2E;
+      --text-sub: #555577;
+      --bg: #F8F7FE;
+      --card: #FFFFFF;
+      --border: #D8D5F5;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .app-icon {
+      width: 64px; height: 64px;
+      border-radius: 18px;
+      background: var(--purple);
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 12px;
+    }
+    .app-icon svg { width: 36px; height: 36px; }
+    header h1 { font-size: 22px; font-weight: 700; color: var(--purple); }
+    header p { font-size: 13px; color: var(--text-sub); margin-top: 4px; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 20px 80px; }
+    .notice-card {
+      background: var(--mint-light);
+      border: 1px solid #9FE1CB;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      color: var(--mint);
+      font-weight: 500;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 8px;
+    }
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+    section p { color: var(--text-sub); margin-bottom: 10px; font-size: 14px; }
+    section p:last-child { margin-bottom: 0; }
+    ul { padding-left: 18px; margin-bottom: 10px; }
+    ul li { color: var(--text-sub); font-size: 14px; margin-bottom: 6px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag {
+      background: var(--purple-light);
+      color: var(--purple);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+    }
+    .tag.mint { background: var(--mint-light); color: var(--mint); border-color: #9FE1CB; }
+    table {
+      width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;
+    }
+    th, td { padding: 10px 14px; text-align: left; border: 1px solid var(--border); }
+    th { background: var(--purple-light); color: var(--purple); font-weight: 700; font-size: 13px; }
+    td { color: var(--text-sub); }
+    .highlight {
+      background: var(--purple-light);
+      border-left: 4px solid var(--purple);
+      border-radius: 0 12px 12px 0;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-size: 14px;
+      color: var(--text);
+    }
+    footer {
+      text-align: center;
+      color: var(--text-sub);
+      font-size: 13px;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="app-icon">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="10" width="24" height="18" rx="3" fill="white" opacity="0.95"/>
+        <rect x="6" y="10" width="10" height="5" rx="2" fill="white"/>
+        <circle cx="18" cy="20" r="5" fill="#7F77DD"/>
+        <circle cx="18" cy="20" r="2.5" fill="white"/>
+      </svg>
+    </div>
+    <h1>Photo Storage</h1>
+    <p>개인정보처리방침 · 시행일: 2026년 7월 2일</p>
+  </header>
+
+  <main>
+    <div class="notice-card">
+      📌 Photo Storage는 사용자의 소중한 사진과 동영상을 안전하게 정리할 수 있도록 돕는 앱이에요. 이 방침은 앱이 어떤 정보를 사용하고, 어떻게 보호하는지 알기 쉽게 설명해요.
+    </div>
+
+    <!-- 1 -->
+    <section>
+      <div class="section-label">01 · 수집하는 정보</div>
+      <h2>앱이 사용하는 정보</h2>
+      <p>Photo Storage는 다음과 같은 권한을 사용해요. 이 외에 별도의 개인정보를 수집하거나 외부 서버로 전송하지 않아요.</p>
+      <table>
+        <tr><th>권한</th><th>사용 목적</th></tr>
+        <tr><td>카메라</td><td>폴더 안에서 사진 및 동영상을 직접 촬영하기 위해</td></tr>
+        <tr><td>마이크</td><td>동영상 녹화 시 음성을 함께 기록하기 위해</td></tr>
+        <tr><td>사진/미디어 저장공간 읽기</td><td>기기의 갤러리에서 사진·동영상을 폴더로 가져오기 위해</td></tr>
+        <tr><td>사진/미디어 저장공간 쓰기</td><td>촬영·편집한 사진·동영상을 기기에 저장하기 위해</td></tr>
+      </table>
+      <div class="highlight">
+        📦 모든 사진과 동영상은 사용자의 기기 내 공용 저장공간(Pictures/Photo Storage)에만 저장됩니다. 외부 서버나 클라우드로 업로드되지 않아요.
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section>
+      <div class="section-label">02 · 수집하지 않는 정보</div>
+      <h2>Photo Storage가 수집하지 않는 것들</h2>
+      <div class="tag-row">
+        <span class="tag">이름 / 연락처</span>
+        <span class="tag">위치 정보</span>
+        <span class="tag">계정 / 로그인 정보</span>
+        <span class="tag">광고 식별자</span>
+        <span class="tag">인터넷 사용 기록</span>
+        <span class="tag">기기 식별 정보</span>
+      </div>
+      <p style="margin-top: 14px;">Photo Storage는 회원가입, 로그인, 인터넷 연결이 필요 없는 완전한 오프라인 앱이에요. 사용자 데이터를 수집·분석하거나 제3자에게 제공하지 않아요.</p>
+    </section>
+
+    <!-- 3 -->
+    <section>
+      <div class="section-label">03 · 데이터 저장 및 보관</div>
+      <h2>데이터는 어디에 저장되나요?</h2>
+      <p>모든 데이터(사진, 동영상, 폴더 구조)는 사용자의 기기 내부에만 저장돼요.</p>
+      <ul>
+        <li>저장 위치: 기기 내 공용 사진 저장공간 (Pictures/Photo Storage 폴더)</li>
+        <li>앱을 삭제해도 사진과 동영상은 삭제되지 않고 기기에 그대로 보존돼요</li>
+        <li>갤러리 앱 등 다른 앱에서도 Photo Storage 폴더에 접근할 수 있어요</li>
+        <li>외부 서버, 클라우드 또는 제3자 서비스로 전송되는 데이터는 없어요</li>
+      </ul>
+    </section>
+
+    <!-- 4 -->
+    <section>
+      <div class="section-label">04 · 제3자 제공 및 공유</div>
+      <h2>정보를 다른 곳에 제공하나요?</h2>
+      <div class="highlight" style="background: var(--mint-light); border-color: var(--mint);">
+        🔒 Photo Storage는 사용자의 어떠한 정보도 제3자에게 제공하거나 공유하지 않아요.
+      </div>
+      <p>광고, 분석, 마케팅 목적으로 데이터를 활용하지 않으며, 외부 SDK나 광고 라이브러리를 포함하지 않아요.</p>
+    </section>
+
+    <!-- 5 -->
+    <section>
+      <div class="section-label">05 · 아동 보호</div>
+      <h2>아동의 개인정보 보호</h2>
+      <p>Photo Storage는 만 14세 미만 아동을 대상으로 하지 않아요. 아동의 개인정보를 의도적으로 수집하지 않으며, 만 14세 미만 아동은 보호자의 지도 아래 사용하도록 권장해요.</p>
+    </section>
+
+    <!-- 6 -->
+    <section>
+      <div class="section-label">06 · 사용자 권리</div>
+      <h2>사용자의 권리</h2>
+      <ul>
+        <li><strong>데이터 삭제:</strong> 앱 내에서 언제든지 사진·동영상·폴더를 직접 삭제할 수 있어요</li>
+        <li><strong>권한 철회:</strong> 기기 설정에서 언제든지 앱 권한(카메라, 마이크, 저장공간)을 해제할 수 있어요</li>
+        <li><strong>앱 삭제:</strong> 앱을 삭제해도 기기에 저장된 사진·동영상은 보존돼요</li>
+      </ul>
+    </section>
+
+    <!-- 7 -->
+    <section>
+      <div class="section-label">07 · 방침 변경</div>
+      <h2>개인정보처리방침 변경 안내</h2>
+      <p>본 방침이 변경될 경우 앱 업데이트와 함께 이 페이지를 통해 사전 공지할게요. 중요한 변경이 있을 경우 앱 내 알림으로도 안내해드릴게요.</p>
+      <p>현재 버전: <strong>1.0</strong> · 시행일: <strong>2026년 7월 2일</strong></p>
+    </section>
+
+    <!-- 8 -->
+    <section>
+      <div class="section-label">08 · 문의</div>
+      <h2>개인정보 관련 문의</h2>
+      <p>개인정보처리방침과 관련한 문의사항이 있으시면 아래로 연락해 주세요.</p>
+      <div class="tag-row">
+        <span class="tag mint">📧 이메일: cbk2007@naver.com</span>
+      </div>
+      <p style="margin-top: 14px; font-size: 13px; color: var(--text-sub);">문의 접수 후 영업일 기준 3일 이내에 답변드릴게요.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Photo Storage · 개인정보처리방침</p>
+    <p style="margin-top: 4px;">본 앱은 사용자의 데이터를 외부로 전송하지 않습니다</p>
+  </footer>
+</body>
+</html>
